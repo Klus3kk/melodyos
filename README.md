@@ -9,7 +9,7 @@ This project aims to develop a simple operating system written entirely in Rust.
 * Interrupt Handling: Mechanisms for handling hardware and software interrupts.
 * Rust’s Safety: Leveraging Rust's safety features to prevent common bugs such as buffer overflows and null pointer dereferences.
 ## Technologies 
-* Programming Language:
+**Programming Language:**
 - Rust: Core language for OS development, chosen for its safety and performance.
 
 **Bootloader:**
