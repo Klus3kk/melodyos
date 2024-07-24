@@ -25,5 +25,3 @@ This project aims to develop a simple operating system written entirely in Rust.
 - x86_64: Rust crate for x86_64 architecture support.
 - Bootimage: Tool to create bootable disk images for Rust OS kernels.
 - Spin: Provides spinlock-based synchronization primitives.
-
-**Status: In progress.**
