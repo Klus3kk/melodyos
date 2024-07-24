@@ -11,17 +11,17 @@ This project aims to develop a simple operating system written entirely in Rust.
 ## Technologies 
 * Programming Language:
 - Rust: Core language for OS development, chosen for its safety and performance.
-  
-* Bootloader:
+
+**Bootloader:**
 - x86 Assembly: Used for writing the initial bootloader code.
 - GRUB: Common bootloader to load the Rust kernel.
   
-* Development Tools:
+**Development Tools:**
 - QEMU: Emulator for testing the OS without needing physical hardware.
 - Cargo: Rust's package manager and build system.
 - LLVM: Compiler infrastructure used by Rust.
-  
-* Libraries:
+
+**Libraries:**
 - x86_64: Rust crate for x86_64 architecture support.
 - Bootimage: Tool to create bootable disk images for Rust OS kernels.
 - Spin: Provides spinlock-based synchronization primitives.
