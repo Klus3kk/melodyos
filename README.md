@@ -1,5 +1,6 @@
 # MelodyOS
 This project aims to develop a simple operating system written entirely in Rust. It serves as an educational tool for understanding low-level programming concepts, operating system internals, and the Rust programming language's capabilities in system programming. The project covers basic OS functionalities including bootstrapping, memory management, task scheduling, and simple file system implementation.
+
 ## Features
 * Bootloader: Custom bootloader to initialize the hardware and load the kernel.
 * Kernel: Basic kernel written in Rust, handling essential OS tasks.
@@ -27,3 +28,8 @@ This project aims to develop a simple operating system written entirely in Rust.
 * Bootimage: Tool to create bootable disk images for Rust OS kernels.
 * Spin: Provides spinlock-based synchronization primitives.
 
+## Useful commands
+
+``` bash
+    cargo build
+```
