@@ -31,5 +31,5 @@ This project aims to develop a simple operating system written entirely in Rust.
 ## Useful commands
 
 ``` bash
-    cargo build
+cargo build
 ```
