@@ -32,4 +32,8 @@ This project aims to develop a simple operating system written entirely in Rust.
 
 ``` bash
 cargo build --target x86_64-melody_os.json
+
+cargo bootimage
+
+qemu-system-x86_64 -drive format=raw,file=target/x86_64-melody_os/debug/bootimage-melodyos.bin
 ```
