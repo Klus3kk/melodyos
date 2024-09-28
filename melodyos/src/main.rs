@@ -7,8 +7,11 @@ mod vga_buffer;
 
 #[no_mangle] // Disabling name mangling
 pub extern "C" fn _start() -> ! { // Entry point
-    vga_buffer::print_something();
-    loop{}
+    use core::fmt::Write;
+    vga_buffer::WRITER.lock().write_str("Hello again").unwrap();
+    write!(vga_buffer::WRITER.lock(), ", some numbers: {} {}", 42, 1.337).unwrap();
+
+    loop {}
 }
 
 // Function called on panic
