@@ -31,5 +31,5 @@ This project aims to develop a simple operating system written entirely in Rust.
 ## Useful commands
 
 ``` bash
-cargo build --target thumbv7em-none-eabihf
+cargo build --target x86_64-melody_os.json
 ```
