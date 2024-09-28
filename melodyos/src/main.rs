@@ -7,15 +7,14 @@ mod vga_buffer;
 
 #[no_mangle] // Disabling name mangling
 pub extern "C" fn _start() -> ! { // Entry point
-    use core::fmt::Write;
-    vga_buffer::WRITER.lock().write_str("Hello again").unwrap();
-    write!(vga_buffer::WRITER.lock(), ", some numbers: {} {}", 42, 1.337).unwrap();
-
+    println!("Hello World{}", "!");
+    panic!("Some panic message");
     loop {}
 }
 
 // Function called on panic
 #[panic_handler]
-fn panic(_info: &PanicInfo) -> ! { // ! - never
-    loop{}
+fn panic(info: &PanicInfo) -> ! { // ! - never
+    println!("{}", info);
+    loop {}
 }
